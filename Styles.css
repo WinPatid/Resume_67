@@ -1,0 +1,185 @@
+/* -------------------------------------------
+   General
+--------------------------------------------*/
+body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------------------------
+   Navbar
+--------------------------------------------*/
+.navbar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298); /* น้ำเงินเข้ม → น้ำเงินกลาง */
+}
+
+/* -------------------------------------------
+   Profile Image
+--------------------------------------------*/
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff5722;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------
+   Section Spacing
+--------------------------------------------*/
+section {
+  padding: 80px 0;
+  position: relative;
+}
+
+/* -------------------------------------------
+   Section Backgrounds
+--------------------------------------------*/
+
+/* About Me */
+.section-about {
+  background: linear-gradient(135deg, #ffefba, #ffffff); /* เหลืองอ่อน → ขาว */
+  color: #333;
+  text-align: center;
+}
+
+/* Education */
+.section-education {
+  background: linear-gradient(135deg, #d9f0ff, #ffffff); /* ฟ้าอ่อน → ขาว */
+}
+
+/* Projects */
+.section-projects {
+  background: linear-gradient(135deg, #ffe6f0, #ffffff); /* ชมพูอ่อน → ขาว */
+}
+
+/* Experience */
+.section-experience {
+  background: linear-gradient(135deg, #7b4397, #dc2430); /* ม่วงเข้ม → แดงเข้ม */
+  color: #fff;
+}
+
+/* Skills */
+.section-skills {
+  background: linear-gradient(135deg, #c2f0f0, #ffffff); /* ฟ้าเขียวอ่อน → ขาว */
+}
+
+/* Hobbies */
+.section-hobbies {
+  background: linear-gradient(135deg, #fff9c3, #ffe680); /* เหลืองอ่อน → เหลืองทอง */
+}
+
+/* Contact */
+.section-contact {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* ชมพูร้อนแรง → ส้มร้อนแรง */
+  color: #fff;
+  text-align: center;
+}
+
+/* -------------------------------------------
+   Section Titles
+--------------------------------------------*/
+.section-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* -------------------------------------------
+   HR Styling
+--------------------------------------------*/
+hr {
+  border: 3px solid #333;
+  width: 70px;
+  margin: 20px auto;
+}
+
+/* -------------------------------------------
+   Project Cards Hover
+--------------------------------------------*/
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* -------------------------------------------
+   Timeline (Experience)
+--------------------------------------------*/
+.timeline {
+  position: relative;
+  margin-top: 40px;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ff5722;
+  transform: translateX(-50%);
+}
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid #ff5722;
+  z-index: 1;
+}
+.timeline-item:nth-child(odd)::before { right: -10px; }
+.timeline-item:nth-child(even)::before { left: -10px; }
+
+/* -------------------------------------------
+   Hobbies Icons Hover
+--------------------------------------------*/
+.hobby-item {
+  text-align: center;
+  transition: transform 0.3s;
+}
+.hobby-item:hover {
+  transform: scale(1.2);
+}
+
+/* -------------------------------------------
+   Progress Bars
+--------------------------------------------*/
+.progress-bar {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* -------------------------------------------
+   Links
+--------------------------------------------*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffd700;
+}
